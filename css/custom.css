@@ -18,3 +18,36 @@
 #about-jumbo{
   margin-top: 25vh;
 }
+
+#coffee img{
+  margin-left: 200px;
+}
+
+.navbar-brand img{
+  width:90px;
+}
+
+
+.navbar-brand{
+  font-family: 'Roboto';
+  font-size: 25pt;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 5px;
+}
+#contact-form{
+  /*background-color: #394856;*/
+}
+
+#shop-button{
+  background: transparent;
+  color:white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#shop-button:hover{
+  background: rgba(255,255,255,0.1);
+}
+/*
+Old bg:
+background-color: #2A353F*/

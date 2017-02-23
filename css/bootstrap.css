@@ -4163,10 +4163,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+/*Safe Camp*/
 .navbar {
   position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
+  min-height: 80px;
+  margin-bottom: 10px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4271,15 +4272,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   border-width: 1px 0 0;
 }
+/*Safe Camp*/
 .navbar-brand {
   float: left;
   height: 50px;
   padding: 15px 15px;
   padding-right: 50px;
-  font-size: 18px;
-  line-height: 20px;
+  line-height: 50px;
   font-family: 'Roboto';
-  color: #fff;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4326,10 +4326,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav {
   margin: 7.5px -15px;
 }
+/*Safe Camp*/
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 50px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4525,7 +4526,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-color: orange;
-  background-color: transparent;
+  background-color: #394856;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
