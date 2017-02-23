@@ -1,0 +1,20 @@
+#contact input[type="text"]{
+  width: 500px;
+}
+
+/*#about-bg{
+  position: absolute;
+  display: block;
+  opacity: 0.6;
+}*/
+
+#about {
+  background-image: url("../img/ftd-camping-coffee-trans.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+#about-jumbo{
+  margin-top: 25vh;
+}

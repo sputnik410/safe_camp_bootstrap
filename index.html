@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js">
+    </script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: #2A353F; margin-bottom:0px">
+      <div class="container" >
+        <div id = "navbar" class="navbar-header">
+          <a href="#" class="navbar-brand">Safe Camp Coffee</a>
+          <ul class = "nav navbar-nav">
+            <li><a id="aboutLink" href="#">About</a></li>
+            <li><a id="coffeeLink" href="#">Our Coffee</a></li>
+            <li><a id="contactLink" href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- <div id="land" class="container-fluid" style="background: #2A353F">
+      <div style="display:flex; align-items:center justify-content:center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <img class="center-block img-responsive" src="./img/Banner-Trans.png" width="200px" style="padding-top:100px; padding-bottom:100px" alt=""/>
+      </div>
+    </div>
+    </div> -->
+
+    <div id="about" class="container-fluid">
+      <!-- <img id="about-bg" class="img-responsive" src="./img/ftd-camping-coffee.jpg" alt=""> -->
+      <div id="about-jumbo" class="container jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>Love Coffee.</h1>
+          <h1>Love Others.</h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p style="margin-top:25px">Safe Camp is a company with a passion for two things; good coffee, and good people. </p>
+        <p>Let us show you just how good coffee can be.</p>
+      </div>
+      </div>
+    </div>
+
+    <div id="coffee" class="container-fluid" style="background-color: #2A353F">
+      <div style="color: white" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h1>Our Coffee</h1>
+          <img src="./img/Rwanda_Text-Only.png" alt="">
+          <img src="./img/StrongTower_Text-Only.png" alt="">
+      </div>
+
+    </div>
+
+    <div id="contact" class="container-fluid">
+      <div class="form-group">
+        <h1>Contact Us</h1>
+        <form class="" action="index.html" method="post">
+          <input class="form-control" type="text" name="" value="" placeholder="Name"><br>
+
+          <input class="form-control" type="text" name="" value="" placeholder="Email"><br>
+
+          <textarea class="form-control" type="text" name="" value="" placeholder="Message" style="height:300px"></textarea><br>
+
+          <button class="btn btn-default" type="button" name="Submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </body>
+  <script type="text/javascript">
+
+  //Smooth scroll to elements
+  var t = 500; //Scroll time
+
+    $(document).ready(function(){
+      //About
+      $("#aboutLink").on('click',function(){
+        $('html,body').animate({
+          scrollTop: $('#about').offset().top
+        }, t)
+      })
+      //Coffee
+      $("#coffeeLink").on('click',function(){
+        $('html,body').animate({
+          scrollTop: $('#coffee').offset().top
+        }, t)
+      })
+      //contact
+      $("#contactLink").on('click',function(){
+        $('html,body').animate({
+          scrollTop: $('#contact').offset().top
+        }, t)
+      })
+    })
+
+    //Highlight buttons for visible elements
+    $(document).ready(function(){
+        $.fn.inView = function(){
+        //Window Object
+        var win = $(window);
+        //Object to Check
+        obj = $(this);
+        //the top Scroll Position in the page
+        var scrollPosition = win.scrollTop();
+        //the end of the visible area in the page, starting from the scroll position
+        var visibleArea = win.scrollTop() + win.height();
+        //the end of the object to check
+        var objEndPos = (obj.offset().top + win.height());
+        return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
+      };
+
+      $(window).scroll(function(){
+        if($('#about').inView() == true){
+          $('#aboutLink').toggleClass('a_hover');
+        } else {
+          console.log("Not in view");
+        }
+      })
+    })
+
+  </script>
+</html>
